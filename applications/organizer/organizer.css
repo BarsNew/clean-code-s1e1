@@ -1,0 +1,171 @@
+/* Block Organizer */
+.organizer {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, 'sans-serif';
+}
+
+.information {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+@media (max-width:768px) {
+
+  .information { 
+    text-align: center;
+  }
+
+}
+
+.information__img {
+  width: 100%;
+}
+
+.information__link {
+  font-family: fantasy, cursive;
+}
+
+.organizer__body {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.organizer__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.organizer__li, 
+.organizer__title {
+  list-style: none;
+}
+
+.organizer__task-wrapper {
+  display: flex;
+}
+
+.organizer__task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.organizer__ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.organizer__input,
+.organizer__button {
+  outline: none;
+}
+
+.organizer__button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, 'sans-serif';
+  cursor: pointer;
+}
+
+.organizer__button:hover {
+  color: #3a3A3a;
+}
+
+.organizer__input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.organizer__input:focus {
+  color: #333;
+}
+
+/* New Task */
+label[for="organizer-new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+#organizer-new-task {
+  width: 318px;
+}
+
+/* Task list */
+.organizer__li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.organizer__li > * {
+  vertical-align: middle;
+}
+
+.organizer__li > input[type="checkbox"] {
+  margin: 0 10px;
+}
+
+.organizer__li > label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.organizer__li > input[type="text"] {
+  width: 226px
+}
+
+.organizer__button_delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.organizer__button_delete img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+.organizer__completed label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.organizer__li input[type=text] {
+  display: none;
+}
+
+.organizer__li_edit input[type=text] {
+  display: inline-block;
+  width: 224px;
+}
+
+.organizer__li_edit label {
+  display: none;
+}
