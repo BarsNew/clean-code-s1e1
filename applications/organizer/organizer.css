@@ -5,7 +5,7 @@
   font-family: Lato, 'sans-serif';
 }
 
-.information {
+.organizer__information {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -14,17 +14,17 @@
 
 @media (max-width:768px) {
 
-  .information { 
+  .organizer__information { 
     text-align: center;
   }
 
 }
 
-.information__img {
+.organizer__information-img {
   width: 100%;
 }
 
-.information__link {
+.organizer__information-link {
   font-family: fantasy, cursive;
 }
 
